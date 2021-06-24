@@ -1,0 +1,465 @@
+﻿@font-face {
+    font-family: 'FtDelicattes-Katan';
+    src: url('../fonts/FtDelicattes-Katan-0.37-400-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'FtDelicattes-Gadol';
+    src: url('../fonts/FtDelicattes-Gadol-0.76-400-Regular-Dfus.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'FtDelicattess-Kishut';
+    src: url('../fonts/FtDelicattess-Kishut-1.00-400-Regular.woff2') format('woff2');
+}
+
+/*הגדרות כלליות*/
+body {
+    direction: rtl;
+    background-image: url('../images/bgtexture.jpg');
+    padding-top: 10px;
+}
+
+section {
+    margin: 80px;
+}
+
+.button {
+    background-color: #61C0FF;
+    color: #003366;
+    border-radius: 30px;
+    font-size: inherit;
+    padding: 15px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: yellow;
+    color: #003366;
+    border-radius: 30px;
+    transform: scale(1.15);
+    box-shadow: 4px 3px 6px 0px rgba(0,0,0,0.2);
+}
+
+.kishut {
+    font-family: 'FtDelicattess-Kishut';
+    user-select: none;
+}
+
+    .kishut.pizuz {
+        font-size: 80px;
+        margin-top: -51px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+.inactive {
+    cursor: not-allowed;
+}
+
+.nolink {
+    cursor: default;
+}
+
+
+/*תפריט ניווט*/
+nav {
+    position: relative;
+    margin: 0 auto;
+    width: 580px;
+    font-family: 'FtDelicattes-Katan';
+    font-size: 14pt;
+    margin-top: 75px;
+    padding-bottom: 1px;
+}
+
+#logo {
+    position: absolute;
+    width: 243px;
+    margin-top: -66px;
+}
+
+nav img#taperoll {
+    position: absolute;
+    bottom: -36px;
+    right: -125px;
+}
+
+nav img.tapeend {
+    position: absolute;
+}
+
+nav ul.tape {
+    margin: 0;
+}
+
+    nav ul.tape > li {
+        position: relative;
+        float: right;
+        display: inline-block;
+    }
+
+nav li a {
+    /* display: inline-block; */
+    /* float: right; */
+    /* padding: 15px; */
+    /* padding-top: 9px; */
+    padding-bottom: 9px;
+}
+
+nav ul.tape {
+    /* position: relative; */
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+    /* display: block; */
+    /* top: 20px; */
+    /* padding-top: 77px; */
+    /* padding-right: 165px; */
+    /* margin-top: 85px; */
+}
+
+    nav ul.tape > li > a {
+        background-color: rgba(213, 189, 129, 0.5);
+        color: #663300;
+        text-decoration: none;
+        /* text-align: center; */
+        display: inline-block;
+        padding: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        /* position: relative; */
+    }
+
+        nav ul.tape > li > a:hover {
+            color: white;
+            background-color: rgba(213, 189, 129, 1);
+        }
+
+nav ul.gluespill {
+    display: none;
+    position: absolute;
+    background-image: url('../images/nav/gluespill.png');
+    background-position: bottom;
+    padding: 50px;
+    padding-top: 0px;
+    background-repeat: no-repeat;
+    height: auto;
+    right: -57px;
+    /* top: 0px; */
+}
+
+    nav ul.gluespill li {
+        margin-right: 20px;
+    }
+
+        nav ul.gluespill li a {
+            padding-top: 14px;
+            color: #663300;
+            text-decoration: none;
+            text-align: right;
+            display: inline-block;
+        }
+
+        nav ul.gluespill li a {
+            background-color: none;
+            width: 125px;
+        }
+
+            nav ul.gluespill li a:hover {
+                font-weight: bold;
+                text-shadow: yellow 1px 0 5px;
+            }
+
+nav ul li:hover ul.gluespill {
+    display: block;
+}
+
+
+/*תוכן הדף*/
+
+main {
+    font-family: 'FtDelicattes-Katan';
+    font-size: 14pt;
+    display: block;
+    text-align: center;
+    clear: both;
+}
+
+/*כותרות*/
+
+h1, h2, h3, h4 {
+    font-family: FtDelicattes-Gadol;
+    padding: 15px;
+    clear: both;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+/*טייפ*/
+
+div.tape {
+    margin: auto;
+    color: #663300;
+}
+
+.tape img {
+}
+
+div.tape span {
+    padding: 9px;
+    background-color: rgba(213, 189, 129, 0.5);
+    margin: -5px;
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*פורמט לסקשנים*/
+.headblob {
+    border-radius: 30% 30% 30% 30%;
+    display: inline-block;
+    margin: -30px;
+    padding: 35px;
+}
+
+.contentblob {
+    margin: auto;
+    display: block;
+    padding: 60px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    width: 50%;
+    box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.15);
+}
+
+.headblob h2 {
+    display: inline-block;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.glues a.button, .materials a.button {
+    margin-top: -14px;
+}
+
+/*כחולים*/
+
+.blues .kishut {
+    color: #C2DDF6;
+    font-size: 80%;
+}
+
+div.blues {
+    margin: auto;
+    display: block;
+    padding: 60px;
+    background-color: #C2DDF6;
+    color: #1F3560;
+    border-radius: 30px;
+    align-items: center;
+    width: 50%;
+    box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.15);
+}
+
+    div.blues div {
+        margin: 50px;
+    }
+
+ 
+/*דבקים*/
+
+.glues {
+    color: #333366;
+}
+
+    .glues .headblob {
+        background-color: #D9BCED;
+        position: relative;
+    }
+
+    .glues .kishut.underline {
+        color: #884AC7;
+        font-size: 6em;
+        position: absolute;
+        top: 0;
+        margin: -25px -50px;
+    }
+
+    .glues button {
+        background-color: #D9BCED;
+    }
+
+    .glues .tabs h2 {
+        color: #884AC7;
+    }
+
+/*חומרים*/
+
+.materials {
+    color: #1A4F38;
+}
+
+    .materials .headblob {
+        background-color: #CBE1C5;
+        position: relative;
+    }
+
+    .materials .kishut.underline {
+        color: #2BA33F;
+        font-size: 6em;
+        position: absolute;
+        top: 0;
+        margin: -25px -50px;
+    }
+
+.glues button {
+    background-color: #D9BCED;
+}
+
+.materials .tabs h2 {
+    color: #2BA33F;
+}
+
+/*פוטר*/
+
+footer {
+    background-color: white;
+    color: #663300;
+    position: relative;
+}
+
+#container > footer {
+    background-color: white;
+    color: #663300;
+    position: relative;
+}
+
+footer table {
+    margin: auto;
+}
+
+footer td, footer th {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer img {
+    float:inherit;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    bottom: 0;
+}
+
+/*אייטמים*/
+
+a.item {
+    font-family: FtDelicattes-Gadol;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    padding: 10px;
+}
+
+.icon {
+    position: relative;
+}
+
+    .icon img {
+        max-height: 150px;
+        max-width: 150px;
+        transition: 0.7s all ease;
+    }
+
+    .icon .colored {
+        opacity: 0;
+        transition: opacity 0.5s;
+        position: absolute;
+        right: 0;
+    }
+
+a.item:hover {
+    text-shadow: yellow 1px 0 5px;
+}
+
+    a.item:hover .icon .colored {
+        opacity: 1;
+    }
+
+/*טאבים*/
+
+.tabs .buttons {
+    width: 40%;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.tabs button {
+    margin: 30px;
+    padding: 15px;
+    padding-left: 62px;
+    padding-right: 52px;
+    border-radius: 30px;
+}
+
+    .tabs button.checked {
+        background-color: #1A4F38;
+        color: white;
+    }
+
+    .tabs button .kishut {
+        font-size: 63px;
+        margin-top: -45px;
+        display: inline-block;
+    }
+
+    .tabs .content {
+        width: 40%;
+        background-color:white;
+        min-height:15em;
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+    /*נגישות*/
+
+.skip-link {
+    background: rgba(0,0,0,0.15);
+    color: black;
+    left: 15%;
+    top:5%;
+    padding: 10px;
+    position: absolute;
+}
+
+    .skip-link:focus-within {
+        transform: translateY(40%);
+    }
+
+.skipbutton {
+    background: rgba(0,0,0,0.15);
+    color: black;
+    border-radius: 30px;
+    font-size: inherit;
+    padding: 15px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    transition: all 0.5s;
+    display: inline-block;
+}

@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img id="logo" src="images/nav/logo.png" /></a>
+        <img id="taperoll" src="images/nav/Asset 75.png" />
+        <ul class="tape">
+            <li>
+                <a class="nolink" href="#">דבקים</a>
+                <ul class="gluespill" id="gluenav">
+                    <li><a href="#">דבק פלסטי</a></li>
+                    <li><a href="#">דבק חם</a></li>
+                    <li><a class="inactive" href="#">דבק מגע</a></li>
+                    <li><a class="inactive" href="#">דבק סטיק</a></li>
+                    <li><a class="inactive" href="#">תרסיס דבק</a></li>
+                    <li><a class="inactive" href="#">סופר-גלו</a></li>
+                    <li><a class="inactive" href="#">סרט דבק</a></li>
+                    <li><a class="inactive" href="#">כל הדבקים >></a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="nolink" href="#">חומרים</a>
+                <ul class="gluespill" id="matnav">
+                    <li><a href="#">התאמה אישית</a></li>
+                    <li><a href="paper.html">נייר</a></li>
+                    <li><a class="inactive" href="#">עץ</a></li>
+                    <li><a class="inactive" href="#">פלסטיק</a></li>
+                    <li><a class="inactive" href="#">מתכת</a></li>
+                    <li><a class="inactive" href="#">זכוכית</a></li>
+                    <li><a class="inactive" href="#">בד</a></li>
+                    <li><a class="inactive" href="#">כל החומרים >></a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="nolink" href="#prob">בעיות נפוצות</a>
+                <ul class="gluespill" id="probnav">
+                    <li><a href="#">יצירה ואומנות</a></li>
+                    <li><a class="inactive" href="#">תיקונים בבית</a></li>
+                    <li><a class="inactive" href="#">הסרת דבק</a></li>
+                </ul>
+            </li>
+            <li><a class="inactive" href="#tab">טבלת השוואה</a></li>
+            <li><a href="#ab">אודות</a></li>
+        </ul>
+        <img class="tapeend" src="images/nav/Asset 76.png" />
+    </nav>
+    <a class="skip-link" href='#content'><h3>דלג לתוכן</h3></a>
+    <main class="materials">
+        <section class="materials tabs">
+            <div class="buttons w3-sidebar w3-card">
+                <button class="w3-bar-item w3-button tablink" id="skiptowhat" onclick="openTab(event, 'what1')">מה זה?<span class="kishut"></span></button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'what2')">מה זה מדביק?</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'how1')">איך זה מדביק??</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'how2')">איך מדביקים עם זה?</button>
+            </div>
+            <div class="content" id="content">
+                <div id="default" class="w3-container tab">
+                    <h2>
+                        רוצים להכיר את הדבק הפלסטי?
+                    </h2>
+                    <p>
+                        לחצו על השאלות מצד ימין
+                        כדי לחשוף את התשובות!
+                    </p>
+                </div>
+                <div id="how2" class="w3-container tab" style="display:none">
+                    <h2>איך מדביקים עם זה?</h2>
+                    <p>
+                        מורחים את הדבק על המשטח אותו רוצים להדביק, מניחים עליו את מה שרוצים להדביק, ומחכים עד שהדבק מתייבש ומתקשה. אפשר להשתמש בכלי למריחת הדבק – זה יכול להיות מקל ארטיק, מכחול פשוט (שלא אכפת לנו להרוס), או אפילו האצבעות שלנו.
+                        חשוב לוודא שהמשטח נקי ויבש לפני ההדבקה, כלומר שאין עליו אבק או רטיבות.
+                        <br />
+                        <img src="images/glues/schoolglue/elements/bowl.png" />
+                        <br />
+                        הדבק הפלסטי הוא דבק נוזלי, ולכן חשוב לדעת שהוא עלול להרטיב את החומרים שמשתמשים בהם, כמו למשל להפוך נייר לרטוב וליצור בו גלים. אם לא רוצים שהדבק ירטיב את החומר, כדאי להשתמש בדבקים אחרים כמו דבק גומי, דבק סיליקון, או סרט דבק דו צדדי.
+                    </p>
+                </div>
+                <div id="what1" class="w3-container tab" style="display:none">
+                    <h2>מה זה דבק פלסטי?</h2>
+                    <p>
+                        הדבק הפלסטי הוא דבק שנפוץ ביותר בגני ילדים, כי הוא מתנקה בקלות ואינו רעיל.
+                        הוא יכול להיות לבן או שקוף, והוא יכול לשמש למגוון רחב של חומרים, וגם לתפקד במקרים מסוימים כלכה לציפוי מגן על דברים, כי הוא הופך לשקוף כשהוא מתייבש (גם אם היה לבן במקור).
+                        <br />
+                        <img src="images/glues/schoolglue/elements/what.jpg" />
+                        <br />
+                        זמן הייבוש שלו ארוך יחסית (לפחות כמה דקות), ומתארך ככל שמשתמשים בכמות דבק יותר גדולה. אבל, חיסרון זה דווקא יכול להיות יתרון עבור מי שרוצה מספיק זמן למקם את האובייקטים שהוא מדביק, לפני שהדבק מתייבש ומתקשה.
+                    </p>
+                </div>
+                <div id="what2" class="w3-container tab" style="display:none">
+                    <h2>מה זה מדביק?</h2>
+                    <p>
+                        הדבק הפלסטי הוא מאוד ורסטילי, ומתאים למגוון רחב של חומרים, ביניהם:
+                        עץ, בד, קלקר, אבן, עור, חומרים אורגניים, נייר, ופלסטיק.
+                        <br />
+                        <img src="images/glues/schoolglue/elements/line.png" />
+                        <br />
+                        הוא נצמד הכי טוב לחומרים שהם סופגים, וחומרים שפני השטח שלהם מחוספסים. כשמדובר בחומרים שאינם סופגים או שהם בעלי משטח חלק – יכול להיות שלדבק יהיה קשה להיתפס אליהם.
+                        הדבק הפלסטי נחשב לדבק חלש יחסית, ולכן במקרים שבהם צריכים דבק חזק שיחזיק משקל של משהו, עדיף להשתמש בדבקים סמיכים וחזקים יותר כמו דבק סיליקון או דבק חם.
+                    </p>
+                </div>
+
+                <div id="how1" class="w3-container tab" style="display:none">
+                    <h2>איך הדבק הפלסטי מדביק ומחזיק?</h2>
+                    <p>
+                        הדבק הפלסטי מתחיל נוזלי, ועם הזמן מתייבש ומתקשה.
+                        לאחר שהדבק הפלסטי מתקשה ונספג בתוך החומר, לא ניתן להסיר אותו מהמשטח.
+                        לעומת זאת, אם הדבק הודבק על משטח שאינו סופג, ניתן לקלף אותו מהמשטח, וכמובן גם מהידיים.
+                        <br />
+                        <img src="images/glues/schoolglue/elements/pour.jpg" />
+                        <br />
+                        אם רוצים לנקות דבק פלסטי רטוב, ניתן להשתמש במים ובסבון לפי הצורך.
+                        דבק פלסטי שהתייבש, ניתן לנסות להשרות במיים חמימים כדי לנסות להסיר אותו.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="glues">
+            <header class="headblob">
+                <span class="kishut pizuz">פפפפ</span>
+                <h2>רוצים ללמוד עוד על דבקים?</h2>
+                <span class="kishut pizuz">פפפפפ</span><br />
+                <span class="kishut underline">הההההההההההההההההההההה</span><br />
+            </header>
+            <div class="contentblob">
+                <a class="item" href="#">
+                    <span class="icon">
+                        <img class="mono" src="images/glues/mono/hot.png" alt="" />
+                        <img class="colored" src="images/glues/colored/hot.png" alt="" />
+                    </span>
+                    <br />דבק חם
+                </a>
+                <a class="item" href="#">
+                    <span class="icon">
+                        <img class="mono" src="images/glues/mono/school.png" alt="" />
+                        <img class="colored" src="images/glues/colored/school.png" alt="" />
+                    </span>
+                    <br />דבק פלסטי
+                </a>
+                <a class="item" href="#">
+                    <span class="icon">
+                        <img class="mono" src="images/glues/mono/silicon.png" alt="" />
+                        <img class="colored" src="images/glues/colored/silicon.png" alt="" />
+                    </span>
+                    <br />דבק סיליקון
+                </a>
+                <a class="item" href="#">
+                    <span class="icon">
+                        <img class="mono" src="images/glues/mono/spray.png" alt="" />
+                        <img class="colored" src="images/glues/colored/spray.png" alt="" />
+                    </span>
+                    <br />דבק ספריי
+                </a>
+                <a class="item" href="#">
+                    <span class="icon">
+                        <img class="mono" src="images/glues/mono/contact.png" alt="" />
+                        <img class="colored" src="images/glues/colored/contact.png" alt="" />
+                    </span>
+                    <br />דבק מגע
+                </a>
+            </div>
+            <a class="button" href="#">לכל הדבקים ></a>
+            <a class="skipbutton" href="schoolglue.html" aria-label="לראש העמוד">חזרה לראש העמוד !</a>
+        </section>
+        <div class="tape">
+        </div>
+    </main>
+    <footer>
+        <img src="images/footer/footerblob.png" />
+        <table>
+            <tr>
+                <th>דבקים</th>
+                <th>חומרים</th>
+                <th>בעיות נפוצות</th>
+                <th>טבלת השוואה</th>
+                <th>אודות</th>
+            </tr>
+            <tr>
+                <td>דבק חם</td>
+                <td>נייר</td>
+                <td>עבודות יצירה</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
